@@ -6,7 +6,7 @@
     "font-size": 14,
     "width-margin": 5,
     "height-margin": 5,
-    "spacing": 1,
+    "spacing": 6,
     "background-color": [
         255,
         255,
@@ -14,10 +14,17 @@
     ],
     "source-code": [
         "def function(array_data):",
-        "    return list(map(lambda x: x + 5, array_data))",
+        "    if len(array_data) == 0:",
+        "        return None",
+        "",
+        "    max_value = array_data[0]",
+        "    for value in array_data:",
+        "        if value > max_value:",
+        "            max_value = value",
+        "    return max_value",
         "",
         "",
-        "print(function([0, 5, 10]))",
+        "print(function([0, 5, 2]))",
         ""
     ]
 }
