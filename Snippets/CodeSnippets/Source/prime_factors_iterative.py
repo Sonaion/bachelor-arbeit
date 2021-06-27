@@ -1,6 +1,15 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
+def helper(number):
+    if number == 1:
+        return False
+    for check_num in range(2, int(number / 2) + 1):
+        if number % check_num == 0:
+            return False
+    return True
 
 
-print(function([0, 5, 10]))
-
+def function(number):
+    result = []
+    for idx_num in range(2, number + 1):
+        if helper(idx_num) and number % idx_num == 0:
+            result.append(idx_num)
+    return result

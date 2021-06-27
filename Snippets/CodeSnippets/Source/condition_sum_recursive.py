@@ -1,6 +1,7 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(n):
+    if n == 1:
+        return 0
+    if n % 3 == 0 or n % 4 == 0:
+        return n + function(n - 1)
+    else:
+        return function(n - 1)

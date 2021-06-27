@@ -1,6 +1,16 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
+class Student:
+    def __init__(self, age, name):
+        self.age = age
+        self.name = name
+
+    def __repr__(self):
+        return str(self.name)
 
 
-print(function([0, 5, 10]))
-
+def function(student_array):
+    if len(student_array) == 0:
+        return []
+    elif student_array[0].age >= 18:
+        return [student_array[0]] + function(student_array[1:])
+    else:
+        return function(student_array[1:])

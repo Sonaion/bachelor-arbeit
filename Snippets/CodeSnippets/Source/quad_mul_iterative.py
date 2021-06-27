@@ -1,6 +1,8 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(n):
+    array_data = []
+    for i in range(1, n + 1):
+        array_data.append(i ** 2)
+    result = 1
+    for value in array_data:
+        result *= value
+    return result

@@ -1,6 +1,5 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(array_data, func):
+    if len(array_data) == 0:
+        return []
+    else:
+        return [func(array_data[0])] + function(array_data[1:], func)

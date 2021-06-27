@@ -1,6 +1,4 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(n):
+    if n == 1:
+        return 1
+    return n ** 2 * function(n - 1)

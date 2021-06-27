@@ -1,6 +1,11 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
+class Student:
+    def __init__(self, age, name):
+        self.age = age
+        self.name = name
+
+    def __repr__(self):
+        return str(self.name)
 
 
-print(function([0, 5, 10]))
-
+def function(student_array):
+    return list(filter(lambda x: x.age >= 18, student_array))

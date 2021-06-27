@@ -1,6 +1,7 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(number):
+    if number == 1:
+        return False
+    for check_num in range(2, int(number / 2) + 1):
+        if number % check_num == 0:
+            return False
+    return True

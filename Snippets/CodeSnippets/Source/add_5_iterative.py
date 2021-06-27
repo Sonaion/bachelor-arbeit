@@ -1,6 +1,5 @@
 def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+    result = []
+    for element in array_data:
+        result.append(element + 5)
+    return result

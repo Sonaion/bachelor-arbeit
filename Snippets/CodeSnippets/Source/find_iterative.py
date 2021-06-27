@@ -1,6 +1,5 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(data_array, element):
+    for idx, value in enumerate(data_array):
+        if value == element:
+            return idx
+    return -1

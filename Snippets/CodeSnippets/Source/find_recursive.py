@@ -1,6 +1,11 @@
-def function(array_data):
-    return list(map(lambda x: x + 5, array_data))
-
-
-print(function([0, 5, 10]))
-
+def function(data_array, element):
+    if len(data_array) == 0:
+        return -1
+    elif data_array[0] == element:
+        return 0
+    else:
+        idx = function(data_array[1:], element)
+        if idx == -1:
+            return -1
+        else:
+            return idx + 1
