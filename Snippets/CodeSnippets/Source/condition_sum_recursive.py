@@ -5,3 +5,6 @@ def function(n):
         return n + function(n - 1)
     else:
         return function(n - 1)
+
+
+print(function(14))

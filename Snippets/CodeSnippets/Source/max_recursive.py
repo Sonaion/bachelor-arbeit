@@ -7,3 +7,6 @@ def function(array_data, current=None):
         return function(array_data[1:], current)
     else:
         return function(array_data[1:], array_data[0])
+
+
+print(function([0, 5, 2]))

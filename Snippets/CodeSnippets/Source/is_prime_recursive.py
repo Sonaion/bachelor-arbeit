@@ -8,3 +8,6 @@ def function(number, current=None):
     if number % current == 0:
         return False
     return function(number, current - 1)
+
+
+print(function(7))

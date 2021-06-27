@@ -3,3 +3,6 @@ def function(data_array, element):
         if value == element:
             return idx
     return -1
+
+
+print(function([1, 2, 3, 4, 5], 3))

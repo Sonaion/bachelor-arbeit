@@ -28,3 +28,6 @@ def function(number, current=None):
 
     else:
         return function(number, current + 1)
+
+
+print(function(18))

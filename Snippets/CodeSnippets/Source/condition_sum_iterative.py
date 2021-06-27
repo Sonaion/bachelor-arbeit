@@ -7,3 +7,6 @@ def function(n):
     for value in array_data:
         result += value
     return result
+
+
+print(function(14))

@@ -14,3 +14,10 @@ def function(student_array):
         return [student_array[0]] + function(student_array[1:])
     else:
         return function(student_array[1:])
+
+
+students = []
+students.append(Student(17, "Hans"))
+students.append(Student(21, "Jasmin"))
+students.append(Student(32, "Florian"))
+print(function(students))

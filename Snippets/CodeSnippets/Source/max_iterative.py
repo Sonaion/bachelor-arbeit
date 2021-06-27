@@ -7,3 +7,6 @@ def function(array_data):
         if value > max_value:
             max_value = value
     return max_value
+
+
+print(function([0, 5, 2]))

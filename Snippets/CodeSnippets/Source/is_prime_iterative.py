@@ -5,3 +5,6 @@ def function(number):
         if number % check_num == 0:
             return False
     return True
+
+
+print(function(7))

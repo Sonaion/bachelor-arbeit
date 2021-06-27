@@ -13,3 +13,6 @@ def function(number):
         if helper(idx_num) and number % idx_num == 0:
             result.append(idx_num)
     return result
+
+
+print(function(18))

@@ -13,3 +13,10 @@ def function(student_array):
         if student.age >= 18:
             result.append(student)
     return result
+
+
+students = []
+students.append(Student(17, "Hans"))
+students.append(Student(21, "Jasmin"))
+students.append(Student(32, "Florian"))
+print(function(students))
