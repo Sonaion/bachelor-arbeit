@@ -1,0 +1,28 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "from functools import reduce",
+        "",
+        "",
+        "def function(array_data):",
+        "    max_value = array_data[0]",
+        "    scanned = [max_value := x for x in array_data if x > max_value]",
+        "    return scanned[-1]",
+        "",
+        "",
+        "print(function([0, 5, 2]))",
+        ""
+    ]
+}

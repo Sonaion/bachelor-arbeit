@@ -24,6 +24,17 @@ print(function([0, 5, 10]))
 
 
 ########################################################################################################################
+#add_5_list_comprehension
+
+def function(array_data):
+    return [data + 5 for data in array_data]
+
+
+print(function([0, 5, 10]))
+
+
+
+########################################################################################################################
 #add_5_recursive
 
 def function(array_data):
@@ -55,6 +66,17 @@ def function(array_data, func):
     for data in array_data:
         results.append(func(data))
     return results
+
+
+print(function([1, 2, 3], lambda x: x ** 2 + x))
+
+
+
+########################################################################################################################
+#apply_list_comprehension
+
+def function(array_data, func):
+    return [func(data) for data in array_data]
 
 
 print(function([1, 2, 3], lambda x: x ** 2 + x))
@@ -146,6 +168,39 @@ print(function(computer_array))
 
 
 ########################################################################################################################
+#Computer_list_comprehension
+
+class Computer:
+    id = 0
+
+    def __init__(self, cpu, gpu, ram):
+        self.cpu = cpu
+        self.gpu = gpu
+        self.ram = ram
+        self.id = Computer.id
+        Computer.id += 1
+
+    def __repr__(self):
+        return str(self.id)
+
+
+def function(computer_array):
+    return [computer for computer in computer_array if "AMD" in computer.cpu and "NVIDIA GTX30" in computer.gpu and computer.ram >= 16]
+
+
+computer_array = []
+computer_array.append(Computer("INTEL i7-860", "NVIDIA GTX3080", 16))
+computer_array.append(Computer("AMD 5900x", "NVIDIA GTX3080", 32))
+computer_array.append(Computer("INTEL i9-10900T", "NVIDIA GTX1070", 8))
+computer_array.append(Computer("AMD 5900x", "AMD RX6900", 8))
+computer_array.append(Computer("AMD 5700", "AMD RX6900", 16))
+computer_array.append(Computer("AMD 5900x", "NVIDIA GTX3090", 64))
+computer_array.append(Computer("INTEL i5-8400", "NVIDIA GTX1060", 4))
+print(function(computer_array))
+
+
+
+########################################################################################################################
 #Computer_recursive
 
 class Computer:
@@ -217,6 +272,23 @@ print(function(14))
 
 
 ########################################################################################################################
+#condition_sum_list_comprehension
+
+from functools import reduce
+
+
+def function(n):
+    array_data = [value for value in range(2, n + 1) if value % 3 == 0 or value % 4 == 0]
+    total = 0
+    scanned = [total := total + x for x in array_data]
+    return scanned[-1]
+
+
+print(function(14))
+
+
+
+########################################################################################################################
 #condition_sum_recursive
 
 def function(n):
@@ -256,6 +328,20 @@ def function(data_array, element):
         if value == element:
             return idx
     return -1
+
+
+print(function([1, 2, 3, 4, 5], 3))
+
+
+
+########################################################################################################################
+#find_list_comprehension
+
+from functools import reduce
+
+
+def function(data_array, element):
+    return [idx for (idx, value) in enumerate(data_array) if value == element][0]
 
 
 print(function([1, 2, 3, 4, 5], 3))
@@ -305,6 +391,17 @@ def function(number):
         if number % check_num == 0:
             return False
     return True
+
+
+print(function(7))
+
+
+
+########################################################################################################################
+#is_prime_list_comprehension
+
+def function(number):
+    return len([value for value in range(1, number+1) if number % value == 0]) == 2
 
 
 print(function(7))
@@ -431,6 +528,58 @@ print(function(node1))
 
 
 ########################################################################################################################
+#LinkedList_list_comprehension
+
+from functools import reduce
+from itertools import accumulate
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+    def __repr__(self):
+        return str(self.data)
+
+    def __iter__(self):
+        self.current = self
+        return self
+
+    def __next__(self):
+        if self.current is None:
+            raise StopIteration
+        else:
+            tmp = self.current
+            self.current = self.current.next
+            return tmp
+
+
+def function(node_list):
+    filtered_list = [node.data for (idx, node) in enumerate(node_list) if idx % 2 == 0]
+    total = 0
+    scanned = [total := total + x for x in filtered_list]
+    return scanned[-1]
+
+
+node1 = Node(2)
+node2 = Node(5)
+node3 = Node(7)
+node4 = Node(4)
+node5 = Node(1)
+node6 = Node(3)
+node7 = Node(6)
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+node6.next = node7
+print(function(node1))
+
+
+
+########################################################################################################################
 #LinkedList_recursive
 
 class Node:
@@ -501,6 +650,22 @@ print(function([0, 5, 2]))
 
 
 ########################################################################################################################
+#max_list_comprehension
+
+from functools import reduce
+
+
+def function(array_data):
+    max_value = array_data[0]
+    scanned = [max_value := x for x in array_data if x > max_value]
+    return scanned[-1]
+
+
+print(function([0, 5, 2]))
+
+
+
+########################################################################################################################
 #max_recursive
 
 def function(array_data, current=None):
@@ -520,6 +685,10 @@ print(function([0, 5, 2]))
 
 ########################################################################################################################
 #node_higher_order
+
+from itertools import product
+from functools import reduce
+
 
 class Node:
     def __init__(self, value):
@@ -584,6 +753,40 @@ def function(node):
         for current2 in node.pre_order_iter():
             result += current1.value * current2.value
     return result
+
+
+n = Node(2)
+n.left = Node(1)
+n.right = Node(3)
+print(function(n))
+
+
+
+########################################################################################################################
+#node_list_comprehension
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+    def pre_order_iter(self):
+        result = [self]
+        if self.left is not None:
+            left = self.left.pre_order_iter()
+            result = result + left
+        if self.right is not None:
+            right = self.right.pre_order_iter()
+            result = result + right
+        return result
+
+
+def function(node):
+    multiplies = [x.value * y.value for x in node.pre_order_iter() for y in node.pre_order_iter()]
+    total = 0
+    scanned = [total := total + x for x in multiplies]
+    return scanned[-1]
 
 
 n = Node(2)
@@ -692,6 +895,21 @@ print(function(18))
 
 
 ########################################################################################################################
+#prime_factors_list_comprehension
+
+def helper(number):
+    return len([value for value in range(1, number + 1) if number % value == 0]) == 2
+
+
+def function(number):
+    return [x for x in range(2, number + 1) if helper(x) and number % x == 0]
+
+
+print(function(18))
+
+
+
+########################################################################################################################
 #prime_factors_recursive
 
 def helper(number, current=None):
@@ -756,6 +974,23 @@ def function(n):
     for value in array_data:
         result *= value
     return result
+
+
+print(function(3))
+
+
+
+########################################################################################################################
+#quad_mul_list_comprehension
+
+from functools import reduce
+
+
+def function(n):
+    array_data = [x**2 for x in range(1, n + 1)]
+    total = 1
+    scanned = [total := total * x for x in array_data]
+    return scanned[-1]
 
 
 print(function(3))
@@ -932,6 +1167,76 @@ print(function(store_array, order_array))
 
 
 ########################################################################################################################
+#Store_list_comprehension
+
+from itertools import product
+
+
+class Store:
+    id = 0
+
+    def __init__(self, name, city):
+        self.name = name
+        self.city = city
+        self.orders = []
+        self.id = Store.id
+        Store.id += 1
+
+    def add_order(self, order_id):
+        self.orders.append(order_id)
+
+    def __repr__(self):
+        return str(self.id)
+
+
+class Order:
+    id = 0
+
+    def __init__(self, product_name, number, price):
+        self.product_name = product_name
+        self.magnitude = number
+        self.price = price
+        self.id = Order.id
+        Order.id += 1
+
+    def __repr__(self):
+        return str(self.id)
+
+
+def function(store_array, order_array):
+    selected_stores = [store for store in store_array if store.name == "Edeka"]
+    selected_orders = [order for order in order_array if order.product_name == "sour cream"]
+    return [store for store in selected_stores for order in selected_orders if order.id in store.orders]
+
+
+store_array = []
+store_array.append(Store("Edeka", "Leipzig"))
+store_array.append(Store("Rewe", "München"))
+store_array.append(Store("Lidl", "Leipzig"))
+store_array.append(Store("Edeka", "Berlin"))
+
+order_array = []
+order_array.append(Order("sour cream", 100, 0.9))
+order_array.append(Order("cheese", 230, 1.2))
+order_array.append(Order("apples", 40, 0.5))
+order_array.append(Order("potatoes", 2000, 0.2))
+order_array.append(Order("pans", 10, 10.9))
+
+store_array[0].add_order(0)
+store_array[0].add_order(2)
+store_array[0].add_order(4)
+store_array[1].add_order(1)
+store_array[1].add_order(3)
+store_array[2].add_order(2)
+store_array[2].add_order(0)
+store_array[2].add_order(1)
+store_array[3].add_order(0)
+
+print(function(store_array, order_array))
+
+
+
+########################################################################################################################
 #Store_recursive
 
 from itertools import product
@@ -1065,6 +1370,30 @@ def function(student_array):
         if student.age >= 18:
             result.append(student)
     return result
+
+
+students = []
+students.append(Student(17, "Hans"))
+students.append(Student(21, "Jasmin"))
+students.append(Student(32, "Florian"))
+print(function(students))
+
+
+
+########################################################################################################################
+#students_list_comprehension
+
+class Student:
+    def __init__(self, age, name):
+        self.age = age
+        self.name = name
+
+    def __repr__(self):
+        return str(self.name)
+
+
+def function(student_array):
+    return [student for student in student_array if student.age >= 18]
 
 
 students = []

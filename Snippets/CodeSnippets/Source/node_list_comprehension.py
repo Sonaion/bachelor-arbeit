@@ -1,7 +1,3 @@
-from itertools import product
-from functools import reduce
-
-
 class Node:
     def __init__(self, value):
         self.value = value
@@ -20,9 +16,10 @@ class Node:
 
 
 def function(node):
-    duos = product(node.pre_order_iter(), node.pre_order_iter())
-    multiplies = map(lambda x: x[0].value * x[1].value, duos)
-    return reduce(lambda x, y: x + y, multiplies)
+    multiplies = [x.value * y.value for x in node.pre_order_iter() for y in node.pre_order_iter()]
+    total = 0
+    scanned = [total := total + x for x in multiplies]
+    return scanned[-1]
 
 
 n = Node(2)
