@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9357277a-8ca0-4d9c-89c7-dad3195ad98a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/GenSnippetsLib-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/GenSnippetsLib-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/GenerateSnippets-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/GenerateSnippets-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/node_higher_order.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators/node_higher_order.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets/node_higher_order.png" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Snippets/node_higher_order.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets/node_recursive.png" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Snippets/node_recursive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets_combined.docx" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Snippets_combined.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets_combined.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets_combined.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Snippets_combined.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/node_higher_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/node_higher_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenSnippetsLib.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GenSnippetsLib.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerateGenerators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateGenerators.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerateOneFile.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateOneFile.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerateSnippets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateSnippets.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snippets.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vBJvETiLhaVJWQJ3hyPZLijRau" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9357277a-8ca0-4d9c-89c7-dad3195ad98a" name="Default Changelist" comment="" />
+      <created>1626029778181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626029778181</updated>
+      <workItem from="1626029780799" duration="5000" />
+    </task>
+    <servers />
+  </component>
+</project>
