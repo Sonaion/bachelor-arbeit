@@ -73,7 +73,7 @@ def load_semantic_classifier_from_json(path):
     return semantic_classifier
 
 
-def load_data_from_json(path):
+def load_settings_from_json(path):
     """
 
     :param path:    the path and name to the json file
@@ -85,31 +85,7 @@ def load_data_from_json(path):
     click_settings = clk.ClickSettings()
     click_settings.load_from_dict(data_dic)
 
-    # get click settings
-    click_data_str = data_dic["data"]
-
-    click_data = []
-    for dataset in click_data_str:
-        coordinates_str = dataset.split(" ")
-        coordinates = []
-        for coordinate_str in coordinates_str:
-            coordinate = coordinate_str.split("-")
-            coordinate = (int(coordinate[0]), int(coordinate[1]))
-            coordinates.append(coordinate)
-        click_data.append(coordinates)
-
-    time_data = []
-    # get time settings
-    if "times" in data_dic:
-        times = data_dic["times"]
-        for time_data_tmp in times:
-            time_str = time_data_tmp.split(" ")
-            time_tmp = []
-            for time in time_str:
-                time_tmp.append(int(time))
-            time_data.append(time_tmp)
-
-    return click_data, time_data, click_settings
+    return click_settings
 
 
 def save_data_to_json(path, click_settings, coordinate_buffers, timestamps):

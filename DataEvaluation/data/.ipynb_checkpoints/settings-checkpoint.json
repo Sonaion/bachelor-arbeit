@@ -1,0 +1,9 @@
+{
+  "grad_radius": 15,
+  "radius_x": 600,
+  "radius_y": 5,
+  "use_rectangle": false,
+  "use_circle": false,
+  "use_ellipse": true,
+  "use_times": false
+}
