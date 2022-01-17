@@ -1,0 +1,28 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "def function(number):",
+        "    if number == 1:",
+        "        return False",
+        "    for check_num in range(2, int(number / 2) + 1):",
+        "        if number % check_num == 0:",
+        "            return False",
+        "    return True",
+        "",
+        "",
+        "print(function(7))",
+        ""
+    ]
+}

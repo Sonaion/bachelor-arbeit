@@ -1,0 +1,40 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "class Student:",
+        "    def __init__(self, age, name):",
+        "        self.age = age",
+        "        self.name = name",
+        "",
+        "    def __repr__(self):",
+        "        return str(self.name)",
+        "",
+        "",
+        "def function(student_array):",
+        "    result = []",
+        "    for student in student_array:",
+        "        if student.age >= 18:",
+        "            result.append(student)",
+        "    return result",
+        "",
+        "",
+        "students = []",
+        "students.append(Student(17, \"Hans\"))",
+        "students.append(Student(21, \"Jasmin\"))",
+        "students.append(Student(32, \"Florian\"))",
+        "print(function(students))",
+        ""
+    ]
+}

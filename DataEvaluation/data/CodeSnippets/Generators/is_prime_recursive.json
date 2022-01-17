@@ -1,0 +1,31 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "def function(number, current=None):",
+        "    if current is None:",
+        "        current = int(number / 2)",
+        "    if number == 1:",
+        "        return False",
+        "    if current == 1:",
+        "        return True",
+        "    if number % current == 0:",
+        "        return False",
+        "    return function(number, current - 1)",
+        "",
+        "",
+        "print(function(7))",
+        ""
+    ]
+}

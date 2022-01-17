@@ -1,0 +1,25 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "def function(n):",
+        "    if n == 1:",
+        "        return 1",
+        "    return n ** 2 * function(n - 1)",
+        "",
+        "",
+        "print(function(3))",
+        ""
+    ]
+}

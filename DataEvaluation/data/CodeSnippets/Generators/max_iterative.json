@@ -1,0 +1,30 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 8,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "def function(array_data):",
+        "    if len(array_data) == 0:",
+        "        return None",
+        "",
+        "    max_value = array_data[0]",
+        "    for value in array_data:",
+        "        if value > max_value:",
+        "            max_value = value",
+        "    return max_value",
+        "",
+        "",
+        "print(function([0, 5, 2]))",
+        ""
+    ]
+}
