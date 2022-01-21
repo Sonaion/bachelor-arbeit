@@ -13,14 +13,14 @@
         255
     ],
     "source-code": [
-        "def function(array_data):",
-        "    result = []",
-        "    for element in array_data:",
-        "        result.append(element + 5)",
-        "    return result",
+        "[AOI=Method][AOI=MethodDeclaration]def function(array_data):[/AOI]",
+        "[AOI=MethodBody]    result = []",
+        "[AOI=Iteration][AOI=IterationHead]    for element in array_data:[/AOI]",
+        "[AOI=IterationBody]        result.append(element + 5)[/AOI][/AOI]",
+        "    return result[/AOI][/AOI]",
         "",
         "",
-        "print(function([0, 5, 10]))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([0, 5, 10]))[/AOI][/AOI]",
         ""
     ]
 }

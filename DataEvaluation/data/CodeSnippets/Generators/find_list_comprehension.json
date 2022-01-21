@@ -16,11 +16,11 @@
         "from functools import reduce",
         "",
         "",
-        "def function(data_array, element):",
-        "    return [idx for (idx, value) in enumerate(data_array) if value == element][0]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(data_array, element):[/AOI]",
+        "[AOI=MethodBody]    return [AOI=ListComprehension][idx for (idx, value) in enumerate(data_array) if value == element][0][/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3, 4, 5], 3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3, 4, 5], 3))[/AOI][/AOI]",
         ""
     ]
 }

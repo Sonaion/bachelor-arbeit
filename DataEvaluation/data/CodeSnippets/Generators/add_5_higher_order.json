@@ -13,11 +13,11 @@
         255
     ],
     "source-code": [
-        "def function(array_data):",
-        "    return list(map(lambda x: x + 5, array_data))",
+        "[AOI=Method][AOI=MethodDeclaration]def function(array_data):[/AOI]",
+        "[AOI=MethodBody]    return [AOI=HigherOrder]list(map(lambda x: x + 5, array_data))[/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function([0, 5, 10]))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([0, 5, 10]))[/AOI][/AOI]",
         ""
     ]
 }

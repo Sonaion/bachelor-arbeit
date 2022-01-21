@@ -13,13 +13,13 @@
         255
     ],
     "source-code": [
-        "def function(n):",
-        "    if n == 1:",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    if n == 1:",
         "        return 1",
-        "    return n ** 2 * function(n - 1)",
+        "    return n ** 2 * [AOI=RecursiveCall]function(n - 1)[/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function(3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(3))[/AOI][/AOI]",
         ""
     ]
 }

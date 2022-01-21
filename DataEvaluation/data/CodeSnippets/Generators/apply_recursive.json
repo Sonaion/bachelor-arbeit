@@ -13,14 +13,14 @@
         255
     ],
     "source-code": [
-        "def function(array_data, func):",
-        "    if len(array_data) == 0:",
+        "[AOI=Method][AOI=MethodDeclaration]def function(array_data, func):[/AOI]",
+        "[AOI=MethodBody]    if len(array_data) == 0:",
         "        return []",
         "    else:",
-        "        return [func(array_data[0])] + function(array_data[1:], func)",
+        "        return [func(array_data[0])] + [AOI=RecursiveCall]function(array_data[1:], func)[/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3], lambda x: x ** 2 + x))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3], lambda x: x ** 2 + x))[/AOI][/AOI]",
         ""
     ]
 }

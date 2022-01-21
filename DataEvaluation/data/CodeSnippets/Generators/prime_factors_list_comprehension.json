@@ -13,15 +13,15 @@
         255
     ],
     "source-code": [
-        "def helper(number):",
-        "    return len([value for value in range(1, number + 1) if number % value == 0]) == 2",
+        "[AOI=Helper][AOI=HelperDeclaration]def helper(number):[/AOI]",
+        "[AOI=HelperBody]    return len([AOI=HigherOrder][value for value in range(1, number + 1) if number % value == 0][/AOI]) == 2[/AOI][/AOI]",
         "",
         "",
-        "def function(number):",
-        "    return [x for x in range(2, number + 1) if helper(x) and number % x == 0]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(number):[/AOI]",
+        "[AOI=MethodBody]    return [AOI=HigherOrder][x for x in range(2, number + 1) if helper(x) and number % x == 0][/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function(18))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(18))[/AOI][/AOI]",
         ""
     ]
 }

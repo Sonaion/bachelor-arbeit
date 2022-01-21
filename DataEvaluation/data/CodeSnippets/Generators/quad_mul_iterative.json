@@ -13,17 +13,17 @@
         255
     ],
     "source-code": [
-        "def function(n):",
-        "    array_data = []",
-        "    for i in range(1, n + 1):",
-        "        array_data.append(i ** 2)",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    array_data = []",
+        "[AOI=Iteration][AOI=IterationHead]    for i in range(1, n + 1):[/AOI]",
+        "[AOI=IterationBody]        array_data.append(i ** 2)[/AOI][/AOI]",
         "    result = 1",
-        "    for value in array_data:",
-        "        result *= value",
-        "    return result",
+        "[AOI=Iteration][AOI=IterationHead]    for value in array_data:[/AOI]",
+        "[AOI=IterationBody]        result *= value[/AOI][/AOI]",
+        "    return result[/AOI][/AOI]",
         "",
         "",
-        "print(function(3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(3))[/AOI][/AOI]",
         ""
     ]
 }

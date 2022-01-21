@@ -13,16 +13,16 @@
         255
     ],
     "source-code": [
-        "def function(number):",
-        "    if number == 1:",
+        "[AOI=Method][AOI=MethodDeclaration]def function(number):[/AOI]",
+        "[AOI=MethodBody]    if number == 1:",
         "        return False",
-        "    for check_num in range(2, int(number / 2) + 1):",
-        "        if number % check_num == 0:",
-        "            return False",
-        "    return True",
+        "[AOI=Iteration][AOI=IterationHead]    for check_num in range(2, int(number / 2) + 1):[/AOI]",
+        "[AOI=IterationBody]        if number % check_num == 0:",
+        "            return False[/AOI][/AOI]",
+        "    return True[/AOI][/AOI]",
         "",
         "",
-        "print(function(7))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(7))[/AOI][/AOI]",
         ""
     ]
 }

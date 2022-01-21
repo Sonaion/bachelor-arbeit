@@ -13,20 +13,20 @@
         255
     ],
     "source-code": [
-        "def function(data_array, element):",
-        "    if len(data_array) == 0:",
+        "[AOI=Method][AOI=MethodDeclaration]def function(data_array, element):[/AOI]",
+        "[AOI=MethodBody]    if len(data_array) == 0:",
         "        return -1",
         "    elif data_array[0] == element:",
         "        return 0",
         "    else:",
-        "        idx = function(data_array[1:], element)",
+        "        idx = [AOI=RecursiveCall]function(data_array[1:], element)[/AOI]",
         "        if idx == -1:",
         "            return -1",
         "        else:",
-        "            return idx + 1",
+        "            return idx + 1[/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3, 4, 5], 3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3, 4, 5], 3))[/AOI][/AOI]",
         ""
     ]
 }

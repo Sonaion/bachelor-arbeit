@@ -13,18 +13,18 @@
         255
     ],
     "source-code": [
-        "def function(n):",
-        "    array_data = []",
-        "    for i in range(2, n + 1):",
-        "        if i % 3 == 0 or i % 4 == 0:",
-        "            array_data.append(i)",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    array_data = []",
+        "[AOI=Iteration][AOI=IterationHead]    for i in range(2, n + 1):[/AOI]",
+        "[AOI=IterationBody]        if i % 3 == 0 or i % 4 == 0:",
+        "            array_data.append(i)[/AOI][/AOI]",
         "    result = 0",
-        "    for value in array_data:",
-        "        result += value",
-        "    return result",
+        "[AOI=Iteration][AOI=IterationHead]    for value in array_data:[/AOI]",
+        "[AOI=IterationBody]        result += value[/AOI][/AOI]",
+        "    return result[/AOI][/AOI]",
         "",
         "",
-        "print(function(14))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(14))[/AOI][/AOI]",
         ""
     ]
 }

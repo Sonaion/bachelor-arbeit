@@ -13,14 +13,14 @@
         255
     ],
     "source-code": [
-        "def function(array_data, func):",
-        "    results = []",
-        "    for data in array_data:",
-        "        results.append(func(data))",
-        "    return results",
+        "[AOI=Method][AOI=MethodDeclaration]def function(array_data, func):[/AOI]",
+        "[AOI=MethodBody]    results = []",
+        "[AOI=Iteration][AOI=IterationHead]    for data in array_data:[/AOI]",
+        "[AOI=IterationBody]        results.append(func(data))[/AOI][/AOI]",
+        "    return results[/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3], lambda x: x ** 2 + x))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3], lambda x: x ** 2 + x))[/AOI][/AOI]",
         ""
     ]
 }

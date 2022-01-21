@@ -16,14 +16,14 @@
         "from functools import reduce",
         "",
         "",
-        "def function(n):",
-        "    array_data = [x**2 for x in range(1, n + 1)]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    array_data = [AOI=ListComprehension][x**2 for x in range(1, n + 1)][/AOI]",
         "    total = 1",
-        "    scanned = [total := total * x for x in array_data]",
-        "    return scanned[-1]",
+        "    scanned = [AOI=ListComprehension][total := total * x for x in array_data][/AOI]",
+        "    return scanned[-1][/AOI][/AOI]",
         "",
         "",
-        "print(function(3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(3))[/AOI][/AOI]",
         ""
     ]
 }

@@ -13,11 +13,11 @@
         255
     ],
     "source-code": [
-        "def function(array_data, func):",
-        "    return [func(data) for data in array_data]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(array_data, func):[/AOI]",
+        "    [AOI=MethodBody]return [AOI=ListComprehension][func(data) for data in array_data][/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3], lambda x: x ** 2 + x))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3], lambda x: x ** 2 + x))[/AOI][/AOI]",
         ""
     ]
 }

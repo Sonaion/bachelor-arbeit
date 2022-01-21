@@ -16,14 +16,14 @@
         "from functools import reduce",
         "",
         "",
-        "def function(n):",
-        "    array_data = [value for value in range(2, n + 1) if value % 3 == 0 or value % 4 == 0]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    array_data = [AOI=ListComprehension][value for value in range(2, n + 1) if value % 3 == 0 or value % 4 == 0][/AOI]",
         "    total = 0",
-        "    scanned = [total := total + x for x in array_data]",
-        "    return scanned[-1]",
+        "    scanned = [AOI=ListComprehension][total := total + x for x in array_data][/AOI]",
+        "    return scanned[-1][/AOI][/AOI]",
         "",
         "",
-        "print(function(14))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(14))[/AOI][/AOI]",
         ""
     ]
 }

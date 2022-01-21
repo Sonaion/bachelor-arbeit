@@ -13,16 +13,16 @@
         255
     ],
     "source-code": [
-        "def function(n):",
-        "    if n == 1:",
+        "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
+        "[AOI=MethodBody]    if n == 1:",
         "        return 0",
         "    if n % 3 == 0 or n % 4 == 0:",
-        "        return n + function(n - 1)",
+        "        return n + [AOI=RecursiveCall]function(n - 1)[/AOI]",
         "    else:",
-        "        return function(n - 1)",
+        "        return [AOI=RecursiveCall]function(n - 1)[/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function(14))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(14))[/AOI][/AOI]",
         ""
     ]
 }

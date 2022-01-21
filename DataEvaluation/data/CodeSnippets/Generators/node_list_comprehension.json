@@ -13,7 +13,7 @@
         255
     ],
     "source-code": [
-        "class Node:",
+        "[AOI=Class]class Node:",
         "    def __init__(self, value):",
         "        self.value = value",
         "        self.left = None",
@@ -27,20 +27,20 @@
         "        if self.right is not None:",
         "            right = self.right.pre_order_iter()",
         "            result = result + right",
-        "        return result",
+        "        return result[/AOI]",
         "",
         "",
-        "def function(node):",
-        "    multiplies = [x.value * y.value for x in node.pre_order_iter() for y in node.pre_order_iter()]",
+        "[AOI=Method][AOI=MethodDeclaration]def function(node):[/AOI]",
+        "[AOI=MethodBody]    multiplies = [AOI=ListComprehension][x.value * y.value for x in node.pre_order_iter() for y in node.pre_order_iter()][/AOI]",
         "    total = 0",
-        "    scanned = [total := total + x for x in multiplies]",
-        "    return scanned[-1]",
+        "    scanned = [AOI=ListComprehension][total := total + x for x in multiplies][/AOI]",
+        "    return scanned[-1][/AOI][/AOI]",
         "",
         "",
-        "n = Node(2)",
+        "[AOI=InputPreparation]n = Node(2)",
         "n.left = Node(1)",
-        "n.right = Node(3)",
-        "print(function(n))",
+        "n.right = Node(3)[/AOI]",
+        "[AOI=StartOfAlgorithm]print(function(n))[/AOI]",
         ""
     ]
 }

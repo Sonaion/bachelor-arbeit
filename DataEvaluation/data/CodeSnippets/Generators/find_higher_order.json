@@ -16,13 +16,13 @@
         "from functools import reduce",
         "",
         "",
-        "def function(data_array, element):",
-        "    index_data_array = enumerate(data_array)",
-        "    filtered_array = map(lambda x_tuple: x_tuple[0] if x_tuple[1] == element else 0, index_data_array)",
-        "    return reduce(lambda x, y: x + y, filtered_array)",
+        "[AOI=Method][AOI=MethodDeclaration]def function(data_array, element):[/AOI]",
+        "[AOI=MethodBody]    index_data_array = enumerate(data_array)",
+        "    filtered_array = [AOI=HigherOrder]map(lambda x_tuple: x_tuple[0] if x_tuple[1] == element else 0, index_data_array)[/AOI]",
+        "    return [AOI=HigherOrder]reduce(lambda x, y: x + y, filtered_array)[/AOI][/AOI][/AOI]",
         "",
         "",
-        "print(function([1, 2, 3, 4, 5], 3))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function([1, 2, 3, 4, 5], 3))[/AOI][/AOI]",
         ""
     ]
 }

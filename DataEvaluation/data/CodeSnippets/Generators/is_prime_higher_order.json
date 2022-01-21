@@ -13,13 +13,13 @@
         255
     ],
     "source-code": [
-        "def function(number):",
-        "    number_array = range(1, number + 1)",
-        "    prime_array = filter(lambda x: number % x == 0, number_array)",
-        "    return len(list(prime_array)) == 2",
+        "[AOI=Method][AOI=MethodDeclaration]def function(number):[/AOI]",
+        "[AOI=MethodBody]    number_array = range(1, number + 1)",
+        "    prime_array = [AOI=HigherOrder]filter(lambda x: number % x == 0, number_array)[/AOI]",
+        "    return len(list(prime_array)) == 2[/AOI][/AOI]",
         "",
         "",
-        "print(function(7))",
+        "[AOI=InputPreparation][AOI=StartOfAlgorithm]print(function(7))[/AOI][/AOI]",
         ""
     ]
 }
