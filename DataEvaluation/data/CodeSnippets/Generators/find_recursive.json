@@ -14,10 +14,10 @@
     ],
     "source-code": [
         "[AOI=Method][AOI=MethodDeclaration]def function(data_array, element):[/AOI]",
-        "[AOI=MethodBody]    if len(data_array) == 0:",
+        "[AOI=MethodBody][AOI=RecursiveBaseCase]    if len(data_array) == 0:",
         "        return -1",
         "    elif data_array[0] == element:",
-        "        return 0",
+        "        return 0[/AOI]",
         "    else:",
         "        idx = [AOI=RecursiveCall]function(data_array[1:], element)[/AOI]",
         "        if idx == -1:",

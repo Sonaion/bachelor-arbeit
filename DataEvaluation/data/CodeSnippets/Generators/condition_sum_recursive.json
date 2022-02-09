@@ -14,8 +14,8 @@
     ],
     "source-code": [
         "[AOI=Method][AOI=MethodDeclaration]def function(n):[/AOI]",
-        "[AOI=MethodBody]    if n == 1:",
-        "        return 0",
+        "[AOI=MethodBody][AOI=RecursiveBaseCase]    if n == 1:",
+        "        return 0[/AOI]",
         "    if n % 3 == 0 or n % 4 == 0:",
         "        return n + [AOI=RecursiveCall]function(n - 1)[/AOI]",
         "    else:",

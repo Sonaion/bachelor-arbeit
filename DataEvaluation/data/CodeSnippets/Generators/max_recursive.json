@@ -14,8 +14,8 @@
     ],
     "source-code": [
         "[AOI=Method][AOI=MethodDeclaration]def function(array_data, current=None):[/AOI]",
-        "[AOI=MethodBody]    if len(array_data) == 0:",
-        "        return current",
+        "[AOI=MethodBody][AOI=RecursiveBaseCase]    if len(array_data) == 0:",
+        "        return current[/AOI]",
         "    elif current is None:",
         "        return [AOI=RecursiveCall]function(array_data[1:], array_data[0])[/AOI]",
         "    elif current >= array_data[0]:",
