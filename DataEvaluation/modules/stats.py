@@ -6,7 +6,7 @@ def mannwhitneyu_for_df(df, class_column, value_column, alpha = 0.05):
     categories = df[class_column].unique()
     df_tmp = pd.DataFrame([], columns=["Categorie_A", "Categorie_B", "p_value"])
     for idx, cat_a in enumerate(categories):
-        for cat_b in categories[idx:]:
+        for cat_b in categories[idx + 1:]:
             _stats, p = stats.mannwhitneyu(df[df[class_column]==cat_a][value_column],
                                           df[df[class_column]==cat_b][value_column])
             df_tmp.loc[len(df_tmp)] = [cat_a, cat_b, p]
